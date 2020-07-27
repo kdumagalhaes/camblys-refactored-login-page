@@ -5,6 +5,219 @@
     outline: none;
 }
 
+$primary-gray: #333333;
+$light-gray: rgb(177, 177, 177);
+$lighter-gray: rgb(226, 226, 226);
+$button-green: rgb(34, 136, 145);
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    color: $primary-gray;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+fieldset,
+input {
+    border-radius: 5px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+
+    #cambly-login {
+        width: 100%;
+        height: 100%;
+        max-width: 1130px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../imgs/login_illustration_big.svg");
+        background-position-y: 180px;
+        background-position-x: 200px;
+        background-size: 400px;
+        background-repeat: no-repeat;
+
+        header {
+            margin: 9px 0 75px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 147px;
+                height: 42px;
+            }
+
+            nav {
+                a {
+                    text-decoration: none;
+                    color: $primary-gray;
+                    margin-right: 30px;
+                    font-size: 0.9rem;
+                }
+
+                button {
+                    border: none;
+                    padding: 5px 12px;
+                    color: #fff;
+                    background-color: $button-green;
+                    font-size: 0.95rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        main {
+            width: 100%;
+            max-width: 540px;
+            align-self: flex-end;
+
+            h1 {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            h1,
+            p,
+            .login-buttons,
+            .options-div {
+                margin-bottom: 25px;
+            }
+
+            .login-buttons {
+                display: flex;
+
+                button {
+                    cursor: pointer;
+                    padding: 5px 16px;
+                    border: 1px solid $light-gray;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 12px;
+                    font-weight: bold;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: $lighter-gray;
+                    }
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .options-div {
+                display: flex;
+                align-items: center;
+
+                hr {
+                    display: block;
+                    width: 167px;
+                    height: 1px;
+                    background-color: $lighter-gray;
+                    border: none;
+                }
+
+                span {
+                    margin: 0 10px 0 10px;
+                    font-size: 0.85rem;
+                    display: block;
+                }
+            }
+
+            form {
+                width: 100%;
+                max-width: 372px;
+
+                fieldset {
+                    border-radius: 5px;
+                    border: 1px solid $light-gray;
+                    margin-bottom: 15px;
+
+                    &:hover {
+                        border: 1px solid $primary-gray;
+                    }
+
+                    legend {
+                        margin-left: 10px;
+                        padding: 0 3px 0 3px;
+                        color: $light-gray;
+                        font-size: 0.75rem;
+                    }
+
+                    input {
+                        height: 45px;
+                        width: 100%;
+                        border: none;
+                        padding: 15px;
+                        position: relative;
+                        bottom: 3px;
+                        background: transparent;
+                    }
+                }
+            }
+
+            .user-links {
+                display: flex;
+                flex-direction: column;
+
+                a, button {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    color: $button-green;
+                    text-decoration: none;
+                
+
+                    &:hover {
+                        color: #ff0000;
+                        text-decoration: underline;
+                    }
+                }
+
+                button {
+                    border: none;
+                    text-transform: uppercase;
+                    padding: 8px;
+                    width: 100%;
+                    max-width: 80px;
+                    text-align: center;
+                    display: block;
+                    color: #fff;
+                    background-color: $button-green;
+                    box-shadow: 1px 1px 5px $light-gray;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: rgb(23, 92, 99);
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 45px;
+        background-color: $lighter-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 0.5rem;
+            color: $primary-gray;
+        }
+    }
 }

@@ -7,6 +7,246 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #333333;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+fieldset,
+input {
+  border-radius: 5px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper #cambly-login {
+  width: 100%;
+  height: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../imgs/login_illustration_big.svg");
+  background-position-y: 180px;
+  background-position-x: 200px;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+
+.wrapper #cambly-login header {
+  margin: 9px 0 75px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper #cambly-login header img {
+  width: 147px;
+  height: 42px;
+}
+
+.wrapper #cambly-login header nav a {
+  text-decoration: none;
+  color: #333333;
+  margin-right: 30px;
+  font-size: 0.9rem;
+}
+
+.wrapper #cambly-login header nav button {
+  border: none;
+  padding: 5px 12px;
+  color: #fff;
+  background-color: #228891;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.wrapper #cambly-login main {
+  width: 100%;
+  max-width: 540px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.wrapper #cambly-login main h1 {
+  width: 100%;
+  max-width: 350px;
+}
+
+.wrapper #cambly-login main h1,
+.wrapper #cambly-login main p,
+.wrapper #cambly-login main .login-buttons,
+.wrapper #cambly-login main .options-div {
+  margin-bottom: 25px;
+}
+
+.wrapper #cambly-login main .login-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper #cambly-login main .login-buttons button {
+  cursor: pointer;
+  padding: 5px 16px;
+  border: 1px solid #b1b1b1;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 12px;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.wrapper #cambly-login main .login-buttons button:hover {
+  background-color: #e2e2e2;
+}
+
+.wrapper #cambly-login main .login-buttons button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.wrapper #cambly-login main .options-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper #cambly-login main .options-div hr {
+  display: block;
+  width: 167px;
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+}
+
+.wrapper #cambly-login main .options-div span {
+  margin: 0 10px 0 10px;
+  font-size: 0.85rem;
+  display: block;
+}
+
+.wrapper #cambly-login main form {
+  width: 100%;
+  max-width: 372px;
+}
+
+.wrapper #cambly-login main form fieldset {
+  border-radius: 5px;
+  border: 1px solid #b1b1b1;
+  margin-bottom: 15px;
+}
+
+.wrapper #cambly-login main form fieldset:hover {
+  border: 1px solid #333333;
+}
+
+.wrapper #cambly-login main form fieldset legend {
+  margin-left: 10px;
+  padding: 0 3px 0 3px;
+  color: #b1b1b1;
+  font-size: 0.75rem;
+}
+
+.wrapper #cambly-login main form fieldset input {
+  height: 45px;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  position: relative;
+  bottom: 3px;
+  background: transparent;
+}
+
+.wrapper #cambly-login main .user-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper #cambly-login main .user-links a, .wrapper #cambly-login main .user-links button {
+  margin-bottom: 20px;
+}
+
+.wrapper #cambly-login main .user-links a {
+  color: #228891;
+  text-decoration: none;
+}
+
+.wrapper #cambly-login main .user-links a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.wrapper #cambly-login main .user-links button {
+  border: none;
+  text-transform: uppercase;
+  padding: 8px;
+  width: 100%;
+  max-width: 80px;
+  text-align: center;
+  display: block;
+  color: #fff;
+  background-color: #228891;
+  -webkit-box-shadow: 1px 1px 5px #b1b1b1;
+          box-shadow: 1px 1px 5px #b1b1b1;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.wrapper #cambly-login main .user-links button:hover {
+  background-color: #175c63;
+}
+
+.wrapper footer {
+  width: 100%;
+  height: 45px;
+  background-color: #e2e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper footer span {
+  font-size: 0.5rem;
+  color: #333333;
 }
 /*# sourceMappingURL=main.css.map */
